@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+  <packages/>
+  <device Dclock="48000000" Dcore="Cortex-M3" DcoreVersion="r2p1" Dendian="Little-endian" Dfamily="RSL10 Series" Dfpu="NO_FPU" Dmpu="NO_MPU" Dname="RSL10" Dvendor="ONSemiconductor:141" info="ARM , 24 KB RAM, 388 KB ROM" url="https://www.keil.com/dd2/onsemiconductor/rsl10">
+    <package info="ON Semiconductor RSL10 Device Family Pack" name="RSL10" url="www.onsemi.com/" vendor="ONSemiconductor" version="3.6.465"/>
+  </device>
+  <toolchain Tcompiler="GCC" Toutput="exe"/>
+  <components>
+    <component Cbundle="SmartShot" Cbundleversion="2.1.0+1" Cclass="Board Support" Cgroup="Common" Cvariant="SECO-RSL10-CAM-GEVB" Cvendor="ONSemiconductor" Cversion="2.1.0+1" deviceDependent="1">
+      <package name="RSL10-SmartShot_BSP" url="https://www.onsemi.com/rsl10/" vendor="ONSemiconductor" version="2.1.0+1"/>
+      <file category="doc" deviceDependent="1" name="Drivers/BSP/SmartShot/Documentation/group___s_m_a_r_t_s_h_o_t___t_e_m_p_l_a_t_e_s___g_r_p.html"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/include/onsemi_smartshot.h"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/include/smartshot_assert.h"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/include/smartshot_printf.h"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/include/smartshot_trace.h"/>
+      <file attr="config" category="header" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/config/onsemi_smartshot_config.h" version="2.1.0+1"/>
+      <file attr="config" category="source" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/source/smartshot_assert_config.c" version="2.1.0+1"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/SmartShot/SECO-RSL10-CAM-GEVB/include/smartshot_pinmap.h"/>
+    </component>
+    <component Cbundle="SmartShot" Cbundleversion="2.1.0+1" Cclass="Board Support" Cgroup="Components" Csub="BMA400" Cvendor="ONSemiconductor" Cversion="1.5.6" deviceDependent="1">
+      <package name="RSL10-SmartShot_BSP" url="https://www.onsemi.com/rsl10/" vendor="ONSemiconductor" version="2.1.0+1"/>
+      <file category="doc" deviceDependent="1" name="https://github.com/BoschSensortec/BMA400-API/tree/bma400_v1.5.6"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/Components/BMA400-API/bma400.h"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/Components/BMA400-API/bma400_defs.h"/>
+      <file category="source" deviceDependent="1" name="Drivers/BSP/Components/BMA400-API/bma400.c"/>
+    </component>
+    <component Cbundle="SmartShot" Cbundleversion="2.1.0+1" Cclass="Board Support" Cgroup="Components" Csub="BME280" Cvendor="ONSemiconductor" Cversion="3.5.0" deviceDependent="1">
+      <package name="RSL10-SmartShot_BSP" url="https://www.onsemi.com/rsl10/" vendor="ONSemiconductor" version="2.1.0+1"/>
+      <file category="doc" deviceDependent="1" name="https://github.com/BoschSensortec/BME280_driver/tree/bme280_v3.5.0"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/Components/BME280_driver/bme280.h"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/Components/BME280_driver/bme280_defs.h"/>
+      <file category="source" deviceDependent="1" name="Drivers/BSP/Components/BME280_driver/bme280.c"/>
+    </component>
+    <component Cbundle="SmartShot" Cbundleversion="2.1.0+1" Cclass="Board Support" Cgroup="Components" Csub="SEGGER" Cvariant="release" Cvendor="ONSemiconductor" Cversion="2.1.0+1" deviceDependent="1">
+      <package name="RSL10-SmartShot_BSP" url="https://www.onsemi.com/rsl10/" vendor="ONSemiconductor" version="2.1.0+1"/>
+      <file category="doc" deviceDependent="1" name="https://wiki.segger.com/RTT"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/Components/SEGGER/include/Global.h"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/Components/SEGGER/include/SEGGER.h"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/Components/SEGGER/include/SEGGER_RTT.h"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/Components/SEGGER/include/SEGGER_SYSVIEW.h"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/Components/SEGGER/include/SEGGER_SYSVIEW_ConfDefaults.h"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/Components/SEGGER/include/SEGGER_SYSVIEW_Int.h"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/Components/SEGGER/config/SEGGER_RTT_Conf.h"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/Components/SEGGER/config/SEGGER_SYSVIEW_Conf.h"/>
+      <file category="library" condition="RSL10_GCC" deviceDependent="1" name="Drivers/BSP/Components/SEGGER/lib/libsegger.a"/>
+    </component>
+    <component Cbundle="SmartShot" Cbundleversion="2.1.0+1" Cclass="Board Support" Cgroup="Library" Csub="ACCEL" Cvendor="ONSemiconductor" Cversion="2.1.0+1" deviceDependent="1">
+      <package name="RSL10-SmartShot_BSP" url="https://www.onsemi.com/rsl10/" vendor="ONSemiconductor" version="2.1.0+1"/>
+      <file category="doc" deviceDependent="1" name="Drivers/BSP/SmartShot/Documentation/group___s_m_a_r_t_s_h_o_t___a_c_c_e_l___g_r_p.html"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/include/smartshot_accel_trigger.h"/>
+      <file category="source" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/source/smartshot_accel_trigger.c"/>
+    </component>
+    <component Cbundle="SmartShot" Cbundleversion="2.1.0+1" Cclass="Board Support" Cgroup="Library" Csub="ENV" Cvendor="ONSemiconductor" Cversion="2.1.0+1" deviceDependent="1">
+      <package name="RSL10-SmartShot_BSP" url="https://www.onsemi.com/rsl10/" vendor="ONSemiconductor" version="2.1.0+1"/>
+      <file category="doc" deviceDependent="1" name="Drivers/BSP/SmartShot/Documentation/group___s_m_a_r_t_s_h_o_t___e_n_v___g_r_p.html"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/include/smartshot_env_sensor.h"/>
+      <file category="source" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/source/smartshot_env_sensor.c"/>
+    </component>
+    <component Cbundle="SmartShot" Cbundleversion="2.1.0+1" Cclass="Board Support" Cgroup="Library" Csub="ISP" Cvendor="ONSemiconductor" Cversion="2.1.0+1" deviceDependent="1">
+      <package name="RSL10-SmartShot_BSP" url="https://www.onsemi.com/rsl10/" vendor="ONSemiconductor" version="2.1.0+1"/>
+      <file category="doc" deviceDependent="1" name="Drivers/BSP/SmartShot/Documentation/group___s_m_a_r_t_s_h_o_t___i_s_p___g_r_p.html"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/include/smartshot_isp.h"/>
+      <file category="source" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/source/smartshot_isp.c"/>
+    </component>
+    <component Cbundle="SmartShot" Cbundleversion="2.1.0+1" Cclass="Board Support" Cgroup="Library" Csub="PIR" Cvendor="ONSemiconductor" Cversion="2.1.0+1" deviceDependent="1">
+      <package name="RSL10-SmartShot_BSP" url="https://www.onsemi.com/rsl10/" vendor="ONSemiconductor" version="2.1.0+1"/>
+      <file category="doc" deviceDependent="1" name="Drivers/BSP/SmartShot/Documentation/group___s_m_a_r_t_s_h_o_t___p_i_r___g_r_p.html"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/include/smartshot_pir.h"/>
+      <file category="source" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/source/smartshot_pir.c"/>
+    </component>
+    <component Cbundle="SmartShot" Cbundleversion="2.1.0+1" Cclass="Board Support" Cgroup="Library" Csub="PMIC" Cvariant="SECO-RSL10-CAM-GEVB" Cvendor="ONSemiconductor" Cversion="2.1.0+1" deviceDependent="1">
+      <package name="RSL10-SmartShot_BSP" url="https://www.onsemi.com/rsl10/" vendor="ONSemiconductor" version="2.1.0+1"/>
+      <file category="doc" deviceDependent="1" name="Drivers/BSP/SmartShot/Documentation/group___s_m_a_r_t_s_h_o_t___p_m_i_c___g_r_p.html"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/SmartShot/Common/include/smartshot_pmic.h"/>
+      <file category="header" deviceDependent="1" name="Drivers/BSP/SmartShot/SECO-RSL10-CAM-GEVB/include/smartshot_pmic_NCP6925.h"/>
+      <file category="source" deviceDependent="1" name="Drivers/BSP/SmartShot/SECO-RSL10-CAM-GEVB/source/smartshot_pmic_NCP6925.c"/>
+    </component>
+    <component Capiversion="2.3.0" Cclass="CMSIS Driver" Cgroup="I2C" Csub="I2C" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.6.465" deviceDependent="1">
+      <package name="RSL10" url="www.onsemi.com/" vendor="ONSemiconductor" version="3.6.465"/>
+      <file category="header" deviceDependent="1" name="source/firmware/drivers/i2c_driver/include/I2C_RSLxx.h" version="1.0.0"/>
+      <file category="source" deviceDependent="1" name="source/firmware/drivers/i2c_driver/source/I2C_RSLxx.c" version="1.0.0"/>
+    </component>
+    <component Capiversion="2.2.0" Cclass="CMSIS Driver" Cgroup="SPI" Csub="Smartshot SPI" Cvariant="source" Cvendor="ONSemiconductor" Cversion="2.1.0+1" deviceDependent="1">
+      <package name="RSL10-SmartShot_BSP" url="https://www.onsemi.com/rsl10/" vendor="ONSemiconductor" version="2.1.0+1"/>
+      <file category="header" deviceDependent="1" name="Drivers/CMSIS-Driver/Include/SMARTSHOT_SPI_RSLxx.h" version="1.0.0"/>
+      <file category="source" deviceDependent="1" name="Drivers/CMSIS-Driver/Source/SMARTSHOT_SPI_RSLxx.c" version="1.0.0"/>
+    </component>
+    <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="BLE Abstraction" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.6.465" deviceDependent="1">
+      <package name="RSL10" url="www.onsemi.com/" vendor="ONSemiconductor" version="3.6.465"/>
+      <file category="doc" deviceDependent="1" name="documentation/RSL10_firmware_reference.pdf"/>
+      <file attr="config" category="header" deviceDependent="1" name="source/firmware/ble_abstraction_layer/ble/include/ble_gap.h" version="1.0.0"/>
+      <file attr="config" category="header" deviceDependent="1" name="source/firmware/ble_abstraction_layer/ble/include/ble_gatt.h" version="1.0.0"/>
+      <file attr="config" category="header" deviceDependent="1" name="source/firmware/ble_abstraction_layer/ble/include/ble_l2c.h" version="1.0.0"/>
+      <file attr="config" category="header" deviceDependent="1" name="source/firmware/ble_abstraction_layer/ble/include/msg_handler.h" version="1.0.0"/>
+      <file attr="config" category="header" condition="DISS_Profile_Condition" deviceDependent="1" name="source/firmware/ble_abstraction_layer/ble_profiles/include/ble_diss.h" version="1.0.0"/>
+      <file attr="config" category="header" condition="FOTA_Condition" deviceDependent="1" name="source/firmware/ble_abstraction_layer/ble_profiles/include/ble_dfus.h" version="1.0.0"/>
+      <file attr="config" category="source" deviceDependent="1" name="source/firmware/ble_abstraction_layer/ble/source/ble_gap.c" version="1.0.0"/>
+      <file attr="config" category="source" deviceDependent="1" name="source/firmware/ble_abstraction_layer/ble/source/ble_gatt.c" version="1.0.0"/>
+      <file attr="config" category="source" deviceDependent="1" name="source/firmware/ble_abstraction_layer/ble/source/ble_l2c.c" version="1.0.0"/>
+      <file attr="config" category="source" deviceDependent="1" name="source/firmware/ble_abstraction_layer/ble/source/msg_handler.c" version="1.0.0"/>
+      <file attr="config" category="source" condition="DISS_Profile_Condition" deviceDependent="1" name="source/firmware/ble_abstraction_layer/ble_profiles/source/ble_diss.c" version="1.0.0"/>
+      <file attr="config" category="source" condition="FOTA_Condition" deviceDependent="1" name="source/firmware/ble_abstraction_layer/ble_profiles/source/ble_dfus.c" version="1.0.0"/>
+    </component>
+    <component Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Csub="Fota" Cvariant="release" Cvendor="ONSemiconductor" Cversion="3.6.465" deviceDependent="1">
+      <package name="RSL10" url="www.onsemi.com/" vendor="ONSemiconductor" version="3.6.465"/>
+      <file category="doc" deviceDependent="1" name="documentation/RSL10_firmware_over_the_air_users_guide.pdf"/>
+      <file category="header" deviceDependent="1" name="include/sys_fota.h"/>
+      <file category="header" deviceDependent="1" name="include/sys_boot.h"/>
+      <file attr="config" category="utility" deviceDependent="1" name="source/firmware/fota/tools/mkfotaimg.py" version="1.0.0"/>
+      <file attr="config" category="utility" deviceDependent="1" name="lib/Release/fota.bin" version="1.0.0"/>
+      <file category="library" deviceDependent="1" name="lib/Release/libfota.a"/>
+    </component>
+    <component Cclass="Device" Cgroup="Bluetooth Profiles" Csub="DISS" Cvariant="release" Cvendor="ONSemiconductor" Cversion="3.6.465" deviceDependent="1">
+      <package name="RSL10" url="www.onsemi.com/" vendor="ONSemiconductor" version="3.6.465"/>
+      <file category="doc" deviceDependent="1" name="documentation/ceva/RW-BLE-PRF-DIS-IS.pdf"/>
+      <file category="header" deviceDependent="1" name="include/ble/profiles/diss.h"/>
+      <file category="library" deviceDependent="1" name="lib/ble_profiles/Release/libdiss.a"/>
+    </component>
+    <component Cclass="Device" Cgroup="Libraries" Csub="DMA" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.6.465" deviceDependent="1">
+      <package name="RSL10" url="www.onsemi.com/" vendor="ONSemiconductor" version="3.6.465"/>
+      <file category="doc" deviceDependent="1" name="documentation/RSL10_firmware_reference.pdf"/>
+      <file category="header" deviceDependent="1" name="source/firmware/drivers/dma_driver/include/Driver_DMA.h"/>
+      <file category="header" deviceDependent="1" name="source/firmware/drivers/dma_driver/include/DMA_RSLxx.h"/>
+      <file category="source" deviceDependent="1" name="source/firmware/drivers/dma_driver/source/DMA_RSLxx.c"/>
+    </component>
+    <component Cclass="Device" Cgroup="Libraries" Csub="GPIO" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.6.465" deviceDependent="1">
+      <package name="RSL10" url="www.onsemi.com/" vendor="ONSemiconductor" version="3.6.465"/>
+      <file category="doc" deviceDependent="1" name="documentation/RSL10_firmware_reference.pdf"/>
+      <file category="header" deviceDependent="1" name="source/firmware/drivers/gpio_driver/include/Driver_GPIO.h"/>
+      <file category="header" deviceDependent="1" name="source/firmware/drivers/gpio_driver/include/GPIO_RSLxx.h"/>
+      <file category="source" deviceDependent="1" name="source/firmware/drivers/gpio_driver/source/GPIO_RSLxx.c"/>
+    </component>
+    <component Cclass="Device" Cgroup="Libraries" Csub="System" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.6.465" deviceDependent="1">
+      <package name="RSL10" url="www.onsemi.com/" vendor="ONSemiconductor" version="3.6.465"/>
+      <file category="doc" deviceDependent="1" name="documentation/RSL10_firmware_reference.pdf"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_romvect.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_adc.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_aes.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_asrc.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_audio.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_audiosink.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_bbif.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_clocks.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_cm3.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_crc.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_dio.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_dma.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_flash.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_gpio.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_i2c.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_ip.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_lpdsp32.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_pcm.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_power.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_power_modes.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_pwm.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_rffe.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_rtc.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_spi.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_timers.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_uart.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_sys_watchdog.h"/>
+      <file category="header" deviceDependent="1" name="include/rsl10_protocol.h"/>
+      <file category="source" deviceDependent="1" name="source/firmware/syslib/code/rsl10_romvect.c"/>
+      <file category="source" deviceDependent="1" name="source/firmware/syslib/code/rsl10_sys_asrc.c"/>
+      <file category="source" deviceDependent="1" name="source/firmware/syslib/code/rsl10_sys_audio.c"/>
+      <file category="source" deviceDependent="1" name="source/firmware/syslib/code/rsl10_sys_clocks.c"/>
+      <file category="source" deviceDependent="1" name="source/firmware/syslib/code/rsl10_sys_crc.c"/>
+      <file category="source" deviceDependent="1" name="source/firmware/syslib/code/rsl10_sys_dma.c"/>
+      <file category="source" deviceDependent="1" name="source/firmware/syslib/code/rsl10_sys_flash.c"/>
+      <file category="source" deviceDependent="1" name="source/firmware/syslib/code/rsl10_sys_power.c"/>
+      <file category="source" deviceDependent="1" name="source/firmware/syslib/code/rsl10_sys_power_modes.c"/>
+      <file category="source" deviceDependent="1" name="source/firmware/syslib/code/rsl10_sys_rffe.c"/>
+      <file category="source" deviceDependent="1" name="source/firmware/syslib/code/rsl10_sys_timers.c"/>
+      <file category="source" deviceDependent="1" name="source/firmware/syslib/code/rsl10_sys_uart.c"/>
+      <file category="source" deviceDependent="1" name="source/firmware/syslib/code/rsl10_sys_version.c"/>
+    </component>
+    <component Cclass="Device" Cgroup="Startup" Cvariant="source" Cvendor="ONSemiconductor" Cversion="3.6.465" deviceDependent="1">
+      <package name="RSL10" url="www.onsemi.com/" vendor="ONSemiconductor" version="3.6.465"/>
+      <file category="doc" deviceDependent="1" name="documentation/RSL10_firmware_reference.pdf"/>
+      <file category="include" deviceDependent="1" name="include/"/>
+      <file category="source" condition="GCC_Condition" deviceDependent="1" name="source/firmware/cmsis/source/sbrk.c"/>
+      <file category="source" condition="GCC_Condition" deviceDependent="1" name="source/firmware/cmsis/source/start.c"/>
+      <file attr="config" category="source" deviceDependent="1" name="source/firmware/cmsis/source/system_rsl10.c" version="1.0.0"/>
+      <file attr="config" category="source" condition="GCC_Condition" deviceDependent="1" name="source/firmware/cmsis/source/GCC/startup_rsl10.S" version="1.0.0"/>
+      <file attr="config" category="linkerScript" condition="GCC_Condition" deviceDependent="1" name="source/firmware/cmsis/source/GCC/sections.ld" version="1.0.0"/>
+      <file attr="config" category="header" deviceDependent="1" name="source/firmware/drivers/RTE_config/RTE_Device.h" version="1.0.0"/>
+    </component>
+  </components>
+  <apis>
+    <api Capiversion="2.3.0" Cclass="CMSIS Driver" Cgroup="SPI" Cvendor="ARM" Cversion="2.3.0" exclusive="0">
+      <package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0"/>
+      <file category="doc" name="CMSIS/Documentation/Driver/html/group__spi__interface__gr.html"/>
+      <file category="header" name="CMSIS/Driver/Include/Driver_SPI.h"/>
+    </api>
+    <api Capiversion="2.4.0" Cclass="CMSIS Driver" Cgroup="I2C" Cvendor="ARM" Cversion="2.4.0" exclusive="0">
+      <package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0"/>
+      <file category="doc" name="CMSIS/Documentation/Driver/html/group__i2c__interface__gr.html"/>
+      <file category="header" name="CMSIS/Driver/Include/Driver_I2C.h"/>
+    </api>
+    <api Capiversion="1.0.0" Cclass="Device" Cgroup="Bluetooth Core" Cvendor="ONSemiconductor" Cversion="1.0.0" exclusive="0">
+      <package name="RSL10" url="www.onsemi.com/" vendor="ONSemiconductor" version="3.6.465"/>
+      <file category="doc" name="documentation/RSL10_firmware_reference.pdf"/>
+      <file category="include" name="include/kernel/"/>
+      <file category="include" name="include/ble/"/>
+      <file category="include" name="include/bb/"/>
+      <file category="include" name="include/ble/profiles/"/>
+      <file category="source" condition="Not_IAR_Condition" name="source/firmware/ble_abstraction_layer/ble/source/stubprf.c"/>
+    </api>
+  </apis>
+</configuration>

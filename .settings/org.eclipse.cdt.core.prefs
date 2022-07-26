@@ -1,0 +1,11 @@
+doxygen/doxygen_new_line_after_brief=true
+doxygen/doxygen_use_brief_tag=false
+doxygen/doxygen_use_javadoc_tags=true
+doxygen/doxygen_use_pre_tag=false
+doxygen/doxygen_use_structural_commands=false
+eclipse.preferences.version=1
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1520515646/PATH/delimiter=;
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1520515646/PATH/operation=replace
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1520515646/PATH/value=C\:\\Program Files\\onsemi\\IDE_V4.1.2.79\\arm_tools\\bin;C\:\\MinGW\\bin;C\:\\MinGW\\msys\\1.0\\bin;C\:\\Program Files (x86)\\GNU Arm Embedded Toolchain\\10 2021.10;C\:/Program Files (x86)/onsemi/IDE_V4.1.2.79/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin/server;C\:/Program Files (x86)/onsemi/IDE_V4.1.2.79/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin;C\:\\Program Files (x86)\\Parallels\\Parallels Tools\\Applications;C\:\\Windows\\system32;C\:\\Windows;C\:\\Windows\\System32\\Wbem;C\:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Windows\\System32\\OpenSSH\\;C\:\\Program Files\\Git\\cmd;C\:\\Program Files\\Git\\mingw64\\bin;C\:\\Program Files\\Git\\usr\\bin;C\:\\TDM-GCC-64\\bin;C\:\\Program Files (x86)\\GNU Arm Embedded Toolchain\\10 2021.10\\bin;C\:\\Users\\blazejrypak\\AppData\\Local\\Microsoft\\WindowsApps;C\:\\Program Files\\onsemi\\IDE_V4.1.2.79\\eclipse
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1520515646/append=true
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.1520515646/appendContributed=true

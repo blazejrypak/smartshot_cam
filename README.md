@@ -1,0 +1,1 @@
+# smartshot_cam
