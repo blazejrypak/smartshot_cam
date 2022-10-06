@@ -178,6 +178,7 @@ def make(args):
     app_start = FOTA_BASE_ADR + fota_size
     app_max_size = FLASH_SIZE - BOOT_MAX_SIZE - fota_size
     app, ver_offset, app_id = check_img(args.app, app_start, app_max_size)
+    print(app_id, fota_id)
     assert app_id == fota_id, "Build ID do not match"
     app = embed_devid(app, ver_offset, args.devid)
     app = sign(app, args.key)
